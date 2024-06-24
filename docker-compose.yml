@@ -1,0 +1,10 @@
+services:
+    sonar-scanner-version-tester:
+        build:
+            context: .
+            args:
+                - SCANNER_VERSION=${SCANNER_VERSION}
+        env_file:
+            - ./.env
+        volumes:
+            - ./src:/app/src:rw

@@ -1,0 +1,4 @@
+.env
+prepare.sh
+sonar-project.properties
+/src
