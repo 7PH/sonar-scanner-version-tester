@@ -3,7 +3,10 @@ services:
         build:
             context: .
             args:
-                - SCANNER_VERSION=${SCANNER_VERSION}
+                SCANNER_VERSION: "${SCANNER_VERSION}"
+                DOCKER_USER: "${DOCKER_USER}"
+                DOCKER_UID: "${DOCKER_UID}"
+                DOCKER_GID: "${DOCKER_GID}"
         env_file:
             - ./.env
         volumes:

@@ -5,8 +5,9 @@ Utility to reproduce/test behaviors of different SonarScanner CLI versions
 ## How to use
 
 1. Clone this repository.
-2. Run `bash script/setup.sh`.
+2. Run `bash setup.sh`.
 3. Fill the required values in `.env`:
+   - the user ID and GID to use within the container
    - the SonarScanner CLI version you want to use.
    - your Sonar token, project key (and organization if using SonarCloud).
 3. Set up the desired source code in `src/`.
